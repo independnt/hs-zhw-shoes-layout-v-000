@@ -29,23 +29,17 @@
 
 /* Posititoning Classes */
 
-.col-1{
-  float: left;
-  width: 32%;
-}
+[class*="col-"] {
+    float: left;
+    margin-left: 2%;
+  }
 
-.col-2{
-  float: left;
-  width: 66%;
-}
+  [class*="col-"]:first-child {
+    margin-left: 0;
+  }
 
-#first{
-  margin-left: 0%;
-}
-
-[class*="col-"]{
-  margin-left: 2%;
-}
+.col-4 { width: 32%; }
+.col-8 { width: 64%; }
 
 .center{
   text-align: center;
